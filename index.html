@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il Tuo Nome - Portfolio Personale</title>
+    <title>Marco Giorgis</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -16,40 +17,40 @@
             --dark-color: #1e293b;
             --light-color: #f8fafc;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #333;
             position: relative;
         }
-        
+
         .hero {
             background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             height: 100vh;
             display: flex;
             align-items: center;
         }
-        
+
         .hero h1 {
             font-size: 3.5rem;
             font-weight: 700;
         }
-        
+
         .hero p {
             font-size: 1.5rem;
         }
-        
+
         .bg-custom-dark {
             background-color: var(--dark-color);
         }
-        
+
         .section-title {
             position: relative;
             display: inline-block;
             margin-bottom: 2rem;
             font-weight: 700;
         }
-        
+
         .section-title::after {
             content: '';
             position: absolute;
@@ -59,23 +60,23 @@
             height: 3px;
             background-color: var(--primary-color);
         }
-        
+
         .profile-img {
             border-radius: 50%;
             border: 5px solid rgba(255, 255, 255, 0.2);
         }
-        
+
         .card {
             border: none;
             transition: transform 0.3s ease;
             height: 100%;
         }
-        
+
         .card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
-        
+
         .service-card {
             padding: 30px;
             border-radius: 10px;
@@ -83,23 +84,23 @@
             margin-bottom: 30px;
             background-color: white;
         }
-        
+
         .service-card i {
             font-size: 2.5rem;
             color: var(--primary-color);
             margin-bottom: 15px;
         }
-        
+
         .timeline {
             position: relative;
             padding-left: 30px;
         }
-        
+
         .timeline-item {
             padding-bottom: 40px;
             position: relative;
         }
-        
+
         .timeline-item:before {
             content: '';
             position: absolute;
@@ -109,7 +110,7 @@
             height: 100%;
             background-color: var(--primary-color);
         }
-        
+
         .timeline-item:after {
             content: '';
             position: absolute;
@@ -120,24 +121,24 @@
             border-radius: 50%;
             background-color: var(--primary-color);
         }
-        
+
         .timeline-item:last-child:before {
             height: 5px;
         }
-        
+
         .skill-bar {
             height: 10px;
             background-color: #e9ecef;
             border-radius: 5px;
             margin-bottom: 20px;
         }
-        
+
         .skill-percentage {
             background-color: var(--primary-color);
             height: 10px;
             border-radius: 5px;
         }
-        
+
         .btn-custom {
             background-color: var(--primary-color);
             color: white;
@@ -147,19 +148,19 @@
             border: none;
             transition: all 0.3s ease;
         }
-        
+
         .btn-custom:hover {
             background-color: var(--secondary-color);
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
-        
+
         .footer {
             background-color: var(--dark-color);
             color: white;
             padding: 60px 0 20px;
         }
-        
+
         .social-icon {
             width: 40px;
             height: 40px;
@@ -172,33 +173,33 @@
             margin-right: 10px;
             transition: all 0.3s ease;
         }
-        
+
         .social-icon:hover {
             background-color: var(--primary-color);
             transform: translateY(-3px);
         }
-        
+
         .navbar {
             transition: all 0.3s ease;
         }
-        
+
         .navbar.scrolled {
             background-color: white !important;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         }
-        
+
         #portfolio .card {
             overflow: hidden;
         }
-        
+
         #portfolio .card img {
             transition: transform 0.5s ease;
         }
-        
+
         #portfolio .card:hover img {
             transform: scale(1.05);
         }
-        
+
         .card-overlay {
             position: absolute;
             top: 0;
@@ -212,11 +213,11 @@
             opacity: 0;
             transition: opacity 0.3s ease;
         }
-        
+
         .card:hover .card-overlay {
             opacity: 1;
         }
-        
+
         .testimonial-card {
             background-color: white;
             padding: 30px;
@@ -224,20 +225,20 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             margin-bottom: 30px;
         }
-        
+
         .testimonial-img {
             width: 70px;
             height: 70px;
             border-radius: 50%;
             object-fit: cover;
         }
-        
+
         .contact-info {
             display: flex;
             align-items: center;
             margin-bottom: 15px;
         }
-        
+
         .contact-info i {
             width: 40px;
             height: 40px;
@@ -249,7 +250,7 @@
             justify-content: center;
             margin-right: 15px;
         }
-        
+
         #back-to-top {
             position: fixed;
             bottom: 20px;
@@ -268,19 +269,22 @@
             visibility: hidden;
             z-index: 1000;
         }
-        
+
         #back-to-top.visible {
             opacity: 1;
             visibility: visible;
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: linear-gradient(100deg, var(--primary-color), var(--secondary-color));">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+        style="background: linear-gradient(100deg, var(--primary-color), var(--secondary-color));">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">Marco Giorgis</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -320,12 +324,13 @@
                     <p class="mb-4">Sviluppatore e Tecnico informatico</p>
                     <div class="d-flex">
                         <a href="#contact" class="btn btn-custom me-3">Contattami</a>
-                        <a href="#portfolio" class="btn btn-outline-light rounded-pill fw-semibold px-4">I Miei Progetti</a>
+                        <a href="#portfolio" class="btn btn-outline-light rounded-pill fw-semibold px-4">I Miei
+                            Progetti</a>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-center">
+                <!--<div class="col-lg-6 d-flex justify-content-center">
                     <img src="./img-removebg-preview.png" alt="Il Tuo Nome" width="350">
-                </div>
+                </div>-->
             </div>
         </div>
     </section>
@@ -336,8 +341,12 @@
             <div class="row">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <h2 class="section-title">Su di Me</h2>
-                    <p>Sono uno studente dell'ITIS Mario Delpozzo al quinto anno del corso Informatica e Smart Robot, con esperienza pratica in ambito agricolo e robotico. Ho partecipato a diversi progetti innovativi che uniscono tecnologia e applicazioni pratiche.</p>
-                    <p>La mia passione per la programmazione mi ha portato a sviluppare competenze in vari linguaggi e a lavorare con tecnologie avanzate come i robot collaborativi e sistemi basati su intelligenza artificiale.</p>
+                    <p>Sono uno studente dell'ITIS Mario Delpozzo al quinto anno del corso Informatica e Smart Robot,
+                        con esperienza pratica in ambito agricolo e robotico. Ho partecipato a diversi progetti
+                        innovativi che uniscono tecnologia e applicazioni pratiche.</p>
+                    <p>La mia passione per la programmazione mi ha portato a sviluppare competenze in vari linguaggi e a
+                        lavorare con tecnologie avanzate come i robot collaborativi e sistemi basati su intelligenza
+                        artificiale.</p>
                     <div class="row mt-4">
                         <div class="col-sm-6">
                             <div class="mb-3">
@@ -361,7 +370,9 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-custom mt-3">Scarica CV</a>
+                    <!--<a href="#" download class="btn btn-custom mt-3">
+                        <i class="fas fa-download me-2"></i>Scarica CV
+                    </a>-->
                 </div>
                 <div class="col-lg-6">
                     <h3 class="mb-4">Le Mie Competenze</h3>
@@ -371,7 +382,7 @@
                             <span>70%</span>
                         </div>
                         <div class="skill-bar">
-                            <div class="skill-percentage" style="width: 85%"></div>
+                            <div class="skill-percentage" style="width: 70%"></div>
                         </div>
                     </div>
                     <div class="mb-4">
@@ -492,7 +503,8 @@
                         <div class="timeline-item">
                             <h4>ITIS Mario Delpozzo</h4>
                             <p class="text-muted mb-2">Corso Informatica e Smart Robot • in corso, quinto anno</p>
-                            <p>Diploma di Istituto Tecnico Industriale con specializzazione in informatica e robotica.</p>
+                            <p>Diploma di Istituto Tecnico Industriale con specializzazione in informatica e robotica.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -502,12 +514,14 @@
                         <div class="timeline-item">
                             <h4>Bracciante e operaio agricolo</h4>
                             <p class="text-muted mb-2">Azienda agricola Armando Ezio • 2022 - 2024</p>
-                            <p>Raccolta e potatura di piante da frutto. Acquisizione di competenze pratiche e manuali.</p>
+                            <p>Raccolta e potatura di piante da frutto. Acquisizione di competenze pratiche e manuali.
+                            </p>
                         </div>
                         <div class="timeline-item">
                             <h4>Tecnico junior</h4>
                             <p class="text-muted mb-2">Technogi Srl</p>
-                            <p>Sviluppo competenze nella programmazione di robot collaborativi (UR10 - UniversalRobot) e supporto alla programmazione PLC.</p>
+                            <p>Sviluppo competenze nella programmazione di robot collaborativi (UR10 - UniversalRobot) e
+                                supporto alla programmazione PLC.</p>
                         </div>
                     </div>
                 </div>
@@ -525,9 +539,9 @@
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3">
                     <div class="card h-100 position-relative">
-                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Videogioco Web">
                         <div class="card-overlay">
-                            <a href="#" class="btn btn-light rounded-circle me-2"><i class="fas fa-link"></i></a>
+                            <a href="https://github.com/MarcoGiorgis/SchoolYear_2023-2024/tree/main/informatica/PROGETTO_p5/002_Gioco"
+                                class="btn btn-light rounded-circle me-2"><i class="fas fa-link"></i></a>
                             <a href="#" class="btn btn-light rounded-circle"><i class="fas fa-search"></i></a>
                         </div>
                         <div class="card-body">
@@ -538,7 +552,6 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card h-100 position-relative">
-                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Progetto NAO">
                         <div class="card-overlay">
                             <a href="#" class="btn btn-light rounded-circle me-2"><i class="fas fa-link"></i></a>
                             <a href="#" class="btn btn-light rounded-circle"><i class="fas fa-search"></i></a>
@@ -551,9 +564,9 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card h-100 position-relative">
-                        <img src="/api/placeholder/400/300" class="card-img-top" alt="Game Ability">
                         <div class="card-overlay">
-                            <a href="#" class="btn btn-light rounded-circle me-2"><i class="fas fa-link"></i></a>
+                            <a href="https://github.com/PixelsForge" class="btn btn-light rounded-circle me-2"><i
+                                    class="fas fa-link"></i></a>
                             <a href="#" class="btn btn-light rounded-circle"><i class="fas fa-search"></i></a>
                         </div>
                         <div class="card-body">
@@ -564,9 +577,9 @@
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card h-100 position-relative">
-                        <img src="/api/placeholder/400/300" class="card-img-top" alt="WebApp per bestiame">
                         <div class="card-overlay">
-                            <a href="#" class="btn btn-light rounded-circle me-2"><i class="fas fa-link"></i></a>
+                            <a href="https://github.com/SmartFarmCuneo/progettoAlpeggio"
+                                class="btn btn-light rounded-circle me-2"><i class="fas fa-link"></i></a>
                             <a href="#" class="btn btn-light rounded-circle"><i class="fas fa-search"></i></a>
                         </div>
                         <div class="card-body">
@@ -719,5 +732,78 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating mb-3">
-                                        <textarea class="form-control" placeholder="Il tuo messaggio" id="message" style="height: 150px"></textarea>
+                                        <textarea class="form-control" placeholder="Il tuo messaggio" id="message"
+                                            style="height: 150px"></textarea>
                                         <label for="message">Il tuo messaggio</label>
+
+
+                                        <script
+                                            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+                                        <script>
+                                            document.getElementById('download-cv').addEventListener('click', function (e) {
+                                                e.preventDefault();
+
+                                                // Creare un PDF fittizio (sostituire con un vero PDF quando disponibile)
+                                                const pdfContent = `
+            %PDF-1.7
+            1 0 obj
+            <<
+                /Type /Catalog
+                /Pages 2 0 R
+            >>
+            endobj
+            2 0 obj
+            <<
+                /Type /Pages
+                /Kids [3 0 R]
+                /Count 1
+            >>
+            endobj
+            3 0 obj
+            <<
+                /Type /Page
+                /Parent 2 0 R
+                /Resources <<>>
+                /MediaBox [0 0 595 842]
+                /Contents 4 0 R
+            >>
+            endobj
+            4 0 obj
+            <<
+                /Length 44
+            >>
+            stream
+            BT /F1 24 Tf 100 700 Td (Curriculum Vitae - Marco Giorgis) Tj ET
+            endstream
+            endobj
+            xref
+            0 5
+            0000000000 65535 f
+            0000000009 00000 n
+            0000000056 00000 n
+            0000000111 00000 n
+            0000000223 00000 n
+            trailer
+            <<
+                /Size 5
+                /Root 1 0 R
+            >>
+            startxref
+            323
+            %%EOF
+            `;
+
+                                                // Convertire il contenuto in Blob
+                                                const blob = new Blob([pdfContent], { type: 'application/pdf' });
+
+                                                // Creare un elemento di download temporaneo
+                                                const link = document.createElement('a');
+                                                link.href = window.URL.createObjectURL(blob);
+                                                link.download = 'prova.pdf';
+
+                                                // Aggiungere l'elemento al documento, fare clic e rimuoverlo
+                                                document.body.appendChild(link);
+                                                link.click();
+                                                document.body.removeChild(link);
+                                            });
+                                        </script>
